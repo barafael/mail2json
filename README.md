@@ -1,6 +1,7 @@
 # mail2json
 Email to JSON/YAML converter for evaluating mail-parser lib
 
+```
 mail2json 0.1.0
 
 USAGE:
@@ -13,3 +14,4 @@ FLAGS:
 OPTIONS:
     -i, --input <input>      
     -o, --output <output>    
+```
