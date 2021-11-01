@@ -1,0 +1,179 @@
+{
+  "header": {
+    "date": {
+      "year": 2021,
+      "month": 11,
+      "day": 20,
+      "hour": 14,
+      "minute": 22,
+      "second": 1,
+      "tz_before_gmt": true,
+      "tz_hour": 8,
+      "tz_minute": 0
+    },
+    "from": {
+      "Address": {
+        "name": "Art Vandelay (Vandelay Industries)",
+        "address": "art@vandelay.com"
+      }
+    },
+    "subject": "Why not both importing AND exporting? ☺",
+    "to": {
+      "GroupList": [
+        {
+          "name": "Colleagues",
+          "addresses": [
+            {
+              "name": "James Smythe",
+              "address": "james@vandelay.com"
+            }
+          ]
+        },
+        {
+          "name": "Friends",
+          "addresses": [
+            {
+              "address": "jane@example.com"
+            },
+            {
+              "name": "John Smîth",
+              "address": "john@example.com"
+            }
+          ]
+        }
+      ]
+    },
+    "content_type": {
+      "c_type": "multipart",
+      "c_subtype": "mixed",
+      "attributes": {
+        "boundary": "festivus"
+      }
+    }
+  },
+  "html_body": [
+    {
+      "header": {
+        "content_transfer_encoding": "base64",
+        "content_type": {
+          "c_type": "text",
+          "c_subtype": "html",
+          "attributes": {
+            "charset": "us-ascii"
+          }
+        }
+      },
+      "contents": "<html><p>I was thinking about quitting the &ldquo;exporting&rdquo; to focus just on the &ldquo;importing&rdquo;,</p><p>but then I thought, why not do both? &#x263A;</p></html>"
+    }
+  ],
+  "text_body": [
+    {
+      "contents": "I was thinking about quitting the “exporting” to focus just on the “importing”,\nbut then I thought, why not do both? ☺\n"
+    }
+  ],
+  "attachments": [
+    {
+      "Message": {
+        "header": {
+          "from": {
+            "Address": {
+              "name": "Cosmo Kramer",
+              "address": "kramer@kramerica.com"
+            }
+          },
+          "subject": "Exporting my book about coffee tables",
+          "content_type": {
+            "c_type": "multipart",
+            "c_subtype": "mixed",
+            "attributes": {
+              "boundary": "giddyup"
+            }
+          }
+        },
+        "html_body": [
+          {
+            "contents": "<html><body>ℌ𝔢𝔩𝔭 𝔪𝔢 𝔢𝔵𝔭𝔬𝔯𝔱 𝔪𝔶 𝔟𝔬𝔬𝔨 𝔭𝔩𝔢𝔞𝔰𝔢!</body></html>"
+          }
+        ],
+        "text_body": [
+          {
+            "header": {
+              "content_transfer_encoding": "quoted-printable",
+              "content_type": {
+                "c_type": "text",
+                "c_subtype": "plain",
+                "attributes": {
+                  "charset": "utf-16"
+                }
+              }
+            },
+            "contents": "ℌ𝔢𝔩𝔭 𝔪𝔢 𝔢𝔵𝔭𝔬𝔯𝔱 𝔪𝔶 𝔟𝔬𝔬𝔨 𝔭𝔩𝔢𝔞𝔰𝔢!"
+          }
+        ],
+        "attachments": [
+          {
+            "Binary": {
+              "header": {
+                "content_disposition": {
+                  "c_type": "attachment"
+                },
+                "content_transfer_encoding": "Base64",
+                "content_type": {
+                  "c_type": "image",
+                  "c_subtype": "gif",
+                  "attributes": {
+                    "name": "Book about ☕ tables.gif"
+                  }
+                }
+              },
+              "contents": [
+                71,
+                73,
+                70,
+                56,
+                57,
+                97,
+                1,
+                0,
+                1,
+                0,
+                128,
+                0,
+                0,
+                0,
+                0,
+                0,
+                255,
+                255,
+                255,
+                33,
+                249,
+                4,
+                1,
+                0,
+                0,
+                0,
+                0,
+                44,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                2,
+                1,
+                68,
+                0,
+                59
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
