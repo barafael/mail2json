@@ -13,9 +13,10 @@ struct Opt {
 
 fn main() {
     let opt = Opt::from_args();
-    let mut input = fs::read(&opt.input).expect(&format!("Unable to read file {:?}", opt.input));
+    let input =
+        fs::read(&opt.input).unwrap_or_else(|_| panic!("Unable to read file {:?}", opt.input));
 
-    let message = Message::parse(&mut input[..]);
+    let message = Message::parse(&input[..]);
 
     let json_string = serde_json::to_string_pretty(&message)
         .map_err(|e| panic!("Unable to generate JSON from email with error: {}", e))
