@@ -1,11 +1,10 @@
 [package]
-name = "mail2json"
+name = "mail2json-cli"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
-mail-parser = "0.4.5"
-serde_json = "1.0.80"
-structopt = "0.3.26"
+clap = "3.1.18"
+clap_derive = "3.1.18"
+mail-parser = "0.4.7"
+serde_json = "1.0.81"

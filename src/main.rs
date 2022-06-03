@@ -1,18 +1,19 @@
+use clap::StructOpt;
+use clap_derive::Parser;
 use mail_parser::Message;
 use std::{fs, path::PathBuf};
-use structopt::StructOpt;
 
-#[derive(Debug, StructOpt)]
-struct Opt {
-    #[structopt(short, long)]
+#[derive(Debug, Parser)]
+struct Args {
+    #[clap(short, long)]
     input: PathBuf,
 
-    #[structopt(short, long)]
+    #[clap(short, long)]
     output: Option<PathBuf>,
 }
 
 fn main() {
-    let opt = Opt::from_args();
+    let opt = Args::parse();
     let input =
         fs::read(&opt.input).unwrap_or_else(|_| panic!("Unable to read file {:?}", opt.input));
 
